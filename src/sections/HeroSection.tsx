@@ -9,7 +9,6 @@ import {
   SiGithub,
   SiHtml5,
   SiJavascript,
-  SiLinkedin,
   SiMysql,
   SiNodedotjs,
   SiPostman,
