@@ -3,20 +3,20 @@ import { Tag } from '../components/ui/Tag'
 
 const EXPERIENCE = [
   {
-    company: 'Company Name',
-    role: 'Backend Engineer',
-    period: '2023 — Present',
+    company: 'Expectation Walkers GenAI Research & Services Pvt Ltd',
+    role: 'Junior Developer Intern',
+    period: '10/2025 — Present',
     summary:
-      'Owning backend services, APIs, and data flows for core product features. Collaborating with frontend and product to ship reliably.',
-    stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'Redis'],
+      'Collaborated with developers and project teams on generative AI initiatives, contributing to research, coding, testing, and documentation to deliver innovative, real-world solutions and stable production deployments.',
+    stack: ['Python', 'Generative AI', 'Testing', 'Documentation'],
   },
   {
-    company: 'Previous Company',
-    role: 'Software Engineer',
-    period: '2021 — 2023',
+    company: 'One Team Solutions EdTech Pvt Ltd, Kochi',
+    role: 'Full Stack Python Django',
+    period: '09/2023 — 04/2024',
     summary:
-      'Implemented features end-to-end across backend and infrastructure, with a focus on reliability and performance.',
-    stack: ['Node.js', 'MongoDB', 'Docker'],
+      'Built full-stack web applications using Python and Django, applying object-oriented programming principles, modern HTML/CSS for responsive UIs, and MySQL for database management, while gaining hands-on experience with JavaScript and React basics.',
+    stack: ['Python', 'Django', 'HTML', 'CSS', 'MySQL', 'JavaScript', 'React'],
   },
 ]
 
@@ -32,18 +32,22 @@ export function ExperienceSection() {
             key={`${item.company}-${item.role}`}
             className="rounded-xl border border-white/5 bg-surface/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]"
           >
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <div>
-                <h3 className="text-sm font-semibold text-slate-50">{item.role}</h3>
-                <p className="text-xs text-muted">{item.company}</p>
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <div className="space-y-0.5">
+                  <h3 className="text-sm font-semibold leading-snug text-slate-50">
+                    {item.role}
+                  </h3>
+                  <p className="text-xs text-muted">{item.company}</p>
+                </div>
+                <p className="text-xs font-mono text-muted">{item.period}</p>
               </div>
-              <p className="text-xs font-mono text-muted">{item.period}</p>
-            </div>
-            <p className="mt-3 text-xs text-muted">{item.summary}</p>
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {item.stack.map((tech) => (
-                <Tag key={tech}>{tech}</Tag>
-              ))}
+              <p className="text-xs leading-relaxed text-muted">{item.summary}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {item.stack.map((tech) => (
+                  <Tag key={tech}>{tech}</Tag>
+                ))}
+              </div>
             </div>
           </article>
         ))}
