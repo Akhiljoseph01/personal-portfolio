@@ -4,7 +4,7 @@ import { Tag } from '../components/ui/Tag'
 const EXPERIENCE = [
   {
     company: 'Expectation Walkers GenAI Research & Services Pvt Ltd',
-    role: 'Junior Developer Intern',
+    role: 'Junior Developer',
     period: '10/2025 — Present',
     summary:
       'Collaborated with developers and project teams on generative AI initiatives, contributing to research, coding, testing, and documentation to deliver innovative, real-world solutions and stable production deployments.',
@@ -12,7 +12,7 @@ const EXPERIENCE = [
   },
   {
     company: 'One Team Solutions EdTech Pvt Ltd, Kochi',
-    role: 'Full Stack Python Django',
+    role: 'Full Stack Python Django Developer',
     period: '09/2023 — 04/2024',
     summary:
       'Built full-stack web applications using Python and Django, applying object-oriented programming principles, modern HTML/CSS for responsive UIs, and MySQL for database management, while gaining hands-on experience with JavaScript and React basics.',
@@ -30,7 +30,7 @@ export function ExperienceSection() {
         {EXPERIENCE.map((item) => (
           <article
             key={`${item.company}-${item.role}`}
-            className="rounded-xl border border-white/5 bg-surface/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]"
+            className="rounded-xl border border-white/5 bg-gradient-to-r from-slate-100/10 via-surface/70 to-surface/40 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]"
           >
             <div className="flex flex-col gap-3">
               <div className="flex flex-wrap items-baseline justify-between gap-2">

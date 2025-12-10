@@ -6,17 +6,38 @@ export function AboutSection() {
       <SectionTitle eyebrow="About" title="Who I am">
         Based in India
       </SectionTitle>
+      {/* Moving "about me" strip */}
+      <div className="mb-6 overflow-hidden border border-white/10 bg-slate-100/90">
+        <div className="about-marquee flex min-w-max gap-10 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-950">
+          <span>about me</span>
+          <span> </span>
+          <span>about me</span>
+          <span> </span>
+          <span>about me</span>
+          <span> </span>
+          <span>about me</span>
+          <span> </span>
+          <span>about me</span>
+          <span> </span>
+          <span>about me</span>
+          <span> </span>
+          <span>about me</span>
+          
+          <span></span>
+        </div>
+      </div>
+
       <div className="grid gap-6 text-sm text-muted md:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)]">
         <p>
-          I&apos;m a junior full stack developer focused on building practical, real-world
-          applications. I enjoy working across the stackfrom designing REST APIs in Django or
-          FastAPI to crafting responsive React interfacesand I&apos;m always experimenting with
+          I&apos;m a Full stack developer focused on building practical, real-world
+          applications. I enjoy working across the stack from designing REST APIs in Django or
+          FastAPI to crafting responsive React interfaces and I&apos;m always experimenting with
           GenAI and prompt engineering.
         </p>
         <div className="space-y-2 text-xs">
           <div className="flex justify-between gap-4 border-b border-white/5 pb-2">
             <span className="text-muted">Role</span>
-            <span className="font-medium text-slate-50">Junior Full Stack Developer</span>
+            <span className="font-medium text-slate-50">Full Stack Developer/GenAI</span>
           </div>
           <div className="flex justify-between gap-4 border-b border-white/5 pb-2">
             <span className="text-muted">Main tools</span>

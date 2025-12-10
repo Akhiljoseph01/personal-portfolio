@@ -16,3 +16,17 @@ body {
 #root {
   min-height: 100vh;
 }
+
+/* About section marquee strip */
+@keyframes about-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.about-marquee {
+  animation: about-marquee 18s linear infinite;
+}
