@@ -9,6 +9,7 @@ import {
   SiGithub,
   SiHtml5,
   SiJavascript,
+  SiLinkedin,
   SiMysql,
   SiNodedotjs,
   SiPostman,
@@ -27,29 +28,53 @@ export function HeroSection() {
       id="hero"
       className="flex flex-1 flex-col justify-center pb-12 pt-4 sm:pb-16 sm:pt-8"
     >
-      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-surface/80 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.03)] sm:p-8">
+      <div className="space-y-4 mb-8 mx-auto text-center">
+        <Tag>Founder & Steward of Cloudeln, A01</Tag>
+        <h1 className="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl md:text-5xl">
+          Hi, I&apos;m Akhil Joseph K J
+          <span className="block text-accent">Fullstack Developer Entrepreneur</span>
+          <br></br>
+        </h1>
+        <p className="max-w-xl mx-auto text-sm text-muted sm:text-base">
+          I build end-to-end web applications using modern Python and JavaScript stacks from
+          backend APIs to responsive React frontends with a focus on clean code and practical
+          problem solving.
+        </p>
+      </div>
+
+      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-surface/80 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.03)] sm:p-8 card-glow">
         {/* Grid-paper background overlay */}
         <div
           className="pointer-events-none absolute inset-0 opacity-20 [background-image:linear-gradient(to_right,rgba(148,163,184,0.25)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.25)_1px,transparent_1px)] [background-size:32px_32px]"
         />
 
-        <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
-          <div className="space-y-4">
-            <Tag>Founder & Steward of Cloudeln, A01</Tag>
-            <h1 className="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl md:text-5xl">
-              Hi, I&apos;m Akhil Joseph K J
-              <span className="block text-accent">Fullstack Developer Entrepreneur</span>
-            </h1>
-            <p className="max-w-xl text-sm text-muted sm:text-base">
-              I build end-to-end web applications using modern Python and JavaScript stacks from
-              backend APIs to responsive React frontends with a focus on clean code and practical
-              problem solving.
-            </p>
+        <div className="relative">
+          <div className="pointer-events-auto absolute right-4 top-4 flex flex-col items-stretch gap-2 sm:flex-row sm:items-center">
+            <button
+              type="button"
+              onClick={() => {
+                window.open('/cv.pdf', '_blank')
+              }}
+              className="flex flex-col items-start rounded-lg border border-white/10 bg-slate-950/70 px-3 py-2 text-[11px] shadow-md backdrop-blur transition-transform transition-shadow duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-accent/60 hover:bg-slate-900/80"
+            >
+              <span className="text-[9px] font-mono uppercase tracking-[0.16em] text-slate-400">
+                Resume
+              </span>
+              <span className="mt-0.5 text-[11px] font-medium text-slate-50">Download CV</span>
+            </button>
+            <a
+              href={import.meta.env.VITE_LINKEDIN_URL || '#'}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 rounded-lg border border-white/10 bg-slate-950/70 px-3 py-2 text-[11px] text-slate-100 shadow-md backdrop-blur transition-transform transition-shadow duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-accent/60 hover:bg-slate-900/80"
+            >
+              <SiLinkedin className="h-4 w-4 text-[#0A66C2]" />
+              <span className="text-[11px] font-medium">Check out my LinkedIn & rate my blogs</span>
+            </a>
           </div>
-
           <div className="flex flex-col gap-4 text-xs text-muted">
             <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-300">
-              Core stack
+              Core Stack
             </span>
 
             {/* Languages */}

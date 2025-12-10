@@ -17,7 +17,7 @@ export default {
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
       },
       maxWidth: {
-        'content': '1120px',
+        content: '1280px',
       },
     },
   },

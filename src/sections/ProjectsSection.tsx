@@ -3,20 +3,22 @@ import { Tag } from '../components/ui/Tag'
 
 const PROJECTS = [
   {
-    name: 'Project name',
-    role: 'Backend developer',
+    name: 'Movie Website and Recommendation Platform',
+    role: 'Django · REST API',
     summary:
-      'Short description of what you built, why it matters, and what the technical challenges were.',
-    tech: ['Node.js', 'TypeScript', 'PostgreSQL'],
-    link: '#',
+      'Movie review and rating platform built with Django that helps users discover, review, and rate movies, with recommendation features to surface relevant titles.',
+    tech: ['Django', 'REST API', 'HTML', 'CSS', 'Bootstrap'],
+    liveLink: undefined,
+    codeLink: 'https://github.com/Akhiljoseph01/Movie-Website-and-Recommendation-Platform',
   },
   {
-    name: 'Another project',
-    role: 'Lead engineer',
+    name: 'Developer Community – Top 1% Developer Network',
+    role: 'Founder · Community Builder',
     summary:
-      'Highlight how you approached architecture, reliability, or performance improvements.',
-    tech: ['Node.js', 'Redis', 'Docker'],
-    link: '#',
+      "Developer community focused on connecting top 1% developers and entrepreneurs, fostering collaboration, networking, and opportunities for career growth.",
+    tech: ['React', 'Firebase', 'Community Platform'],
+    liveLink: 'https://a-01-55e1d.web.app/',
+    codeLink: 'https://github.com/Akhiljoseph01/profileA01',
   },
 ]
 
@@ -30,7 +32,7 @@ export function ProjectsSection() {
         {PROJECTS.map((project) => (
           <article
             key={project.name}
-            className="group flex flex-col justify-between rounded-xl border border-white/5 bg-surface/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition-transform hover:-translate-y-0.5"
+            className="group flex flex-col justify-between rounded-xl border border-white/5 bg-surface/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition-transform hover:-translate-y-0.5 card-glow hover-lift"
           >
             <div>
               <h3 className="text-sm font-semibold text-slate-50">{project.name}</h3>
@@ -45,14 +47,28 @@ export function ProjectsSection() {
                   <Tag key={tech}>{tech}</Tag>
                 ))}
               </div>
-              <a
-                href={project.link}
-                className="text-[11px] font-medium text-accent underline-offset-2 hover:underline"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View project
-              </a>
+              <div className="flex items-center gap-2">
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    className="text-[11px] font-medium text-accent underline-offset-2 hover:underline"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live
+                  </a>
+                )}
+                {project.codeLink && (
+                  <a
+                    href={project.codeLink}
+                    className="text-[11px] font-medium text-accent underline-offset-2 hover:underline"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
+                )}
+              </div>
             </div>
           </article>
         ))}
