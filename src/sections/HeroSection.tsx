@@ -32,7 +32,7 @@ export function HeroSection() {
         <Tag>Founder & Steward of Cloudeln, A01</Tag>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl md:text-5xl">
           Hi, I&apos;m Akhil Joseph K J
-          <span className="block text-accent">Fullstack Developer Entrepreneur</span>
+          <span className="block text-accent">Fullstack Developer, Entrepreneur</span>
           <br></br>
         </h1>
         <p className="max-w-xl mx-auto text-sm text-muted sm:text-base">
@@ -49,221 +49,199 @@ export function HeroSection() {
         />
 
         <div className="relative">
-          <div className="pointer-events-auto absolute right-4 top-4 flex flex-col items-stretch gap-2 sm:flex-row sm:items-center">
-            <button
-              type="button"
-              onClick={() => {
-                window.open('/cv.pdf', '_blank')
-              }}
-              className="flex flex-col items-start rounded-lg border border-white/10 bg-slate-950/70 px-3 py-2 text-[11px] shadow-md backdrop-blur transition-transform transition-shadow duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-accent/60 hover:bg-slate-900/80"
-            >
-              <span className="text-[9px] font-mono uppercase tracking-[0.16em] text-slate-400">
-                Resume
-              </span>
-              <span className="mt-0.5 text-[11px] font-medium text-slate-50">Download CV</span>
-            </button>
-            <a
-              href={import.meta.env.VITE_LINKEDIN_URL || '#'}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 rounded-lg border border-white/10 bg-slate-950/70 px-3 py-2 text-[11px] text-slate-100 shadow-md backdrop-blur transition-transform transition-shadow duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-accent/60 hover:bg-slate-900/80"
-            >
-              <SiLinkedin className="h-4 w-4 text-[#0A66C2]" />
-              <span className="text-[11px] font-medium">Check out my LinkedIn & rate my blogs</span>
-            </a>
-          </div>
           <div className="flex flex-col gap-4 text-xs text-muted">
-            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-300">
+            <br></br>
+            <br></br>
+            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-100 text-center">
               Core Stack
             </span>
 
-            {/* Languages */}
-            <div className="space-y-2">
-              <p className="text-[11px] font-medium text-slate-300">Languages</p>
-              <div className="flex flex-wrap gap-4">
-                {/* Python */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiPython className="h-6 w-6 text-[#f7df1e]" />
+            <div className="grid gap-3 sm:grid-cols-2">
+              {/* Languages */}
+              <div className="rounded-xl p-3">
+                <p className="mb-2 text-[11px] font-medium text-slate-200">Languages</p>
+                <div className="flex flex-wrap gap-3">
+                  {/* Python */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiPython className="h-5 w-5 text-[#f7df1e]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">Python</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">Python</span>
-                </div>
 
-                {/* JavaScript */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiJavascript className="h-6 w-6 text-[#f7df1e]" />
+                  {/* JavaScript */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiJavascript className="h-5 w-5 text-[#f7df1e]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">JavaScript</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">JavaScript</span>
-                </div>
 
-                {/* TypeScript */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiTypescript className="h-6 w-6 text-[#3178c6]" />
+                  {/* TypeScript */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiTypescript className="h-5 w-5 text-[#3178c6]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">TypeScript</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">TypeScript</span>
-                </div>
 
-                {/* HTML */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiHtml5 className="h-6 w-6 text-[#e34f26]" />
+                  {/* HTML */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiHtml5 className="h-5 w-5 text-[#e34f26]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">HTML</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">HTML</span>
-                </div>
 
-                {/* CSS */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiCss3 className="h-6 w-6 text-[#1572b6]" />
+                  {/* CSS */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiCss3 className="h-5 w-5 text-[#1572b6]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">CSS</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">CSS</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Libraries & Frameworks */}
-            <div className="space-y-2">
-              <p className="text-[11px] font-medium text-slate-300">Libraries &amp; Frameworks</p>
-              <div className="flex flex-wrap gap-4">
-                {/* Django */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiDjango className="h-6 w-6 text-[#2ba977]" />
-                  </div>
-                  <span className="text-[11px] text-slate-200">Django</span>
-                </div>
-
-                {/* FastAPI */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiFastapi className="h-6 w-6 text-[#05998b]" />
-                  </div>
-                  <span className="text-[11px] text-slate-200">FastAPI</span>
-                </div>
-
-                {/* React */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiReact className="h-6 w-6 text-[#61dafb]" />
-                  </div>
-                  <span className="text-[11px] text-slate-200">React</span>
-                </div>
-
-                {/* Node.js (runtime / ecosystem) */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiNodedotjs className="h-6 w-6 text-[#539e43]" />
-                  </div>
-                  <span className="text-[11px] text-slate-200">Node.js</span>
-                </div>
-
-                {/* Bootstrap */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiBootstrap className="h-6 w-6 text-[#7952b3]" />
-                  </div>
-                  <span className="text-[11px] text-slate-200">Bootstrap</span>
                 </div>
               </div>
-            </div>
 
-            {/* Tools & Platforms */}
-            <div className="space-y-2">
-              <p className="text-[11px] font-medium text-slate-300">Tools &amp; Platforms</p>
-              <div className="flex flex-wrap gap-4">
-                {/* Git */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiGit className="h-6 w-6 text-[#f05032]" />
+              {/* Libraries & Frameworks */}
+              <div className="rounded-xl p-3">
+                <p className="mb-2 text-[11px] font-medium text-slate-200">Libraries &amp; Frameworks</p>
+                <div className="flex flex-wrap gap-3">
+                  {/* Django */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiDjango className="h-5 w-5 text-[#2ba977]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">Django</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">Git</span>
-                </div>
 
-                {/* GitHub */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiGithub className="h-6 w-6 text-slate-100" />
+                  {/* FastAPI */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiFastapi className="h-5 w-5 text-[#05998b]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">FastAPI</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">GitHub</span>
-                </div>
 
-                {/* AWS */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiAmazon className="h-6 w-6 text-[#ff9900]" />
+                  {/* React */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiReact className="h-5 w-5 text-[#61dafb]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">React</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">AWS</span>
-                </div>
 
-                {/* Render */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiRender className="h-6 w-6 text-[#46e3b7]" />
+                  {/* Node.js (runtime / ecosystem) */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiNodedotjs className="h-5 w-5 text-[#539e43]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">Node.js</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">Render</span>
-                </div>
 
-                {/* Firebase */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiFirebase className="h-6 w-6 text-[#ffca28]" />
+                  {/* Bootstrap */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiBootstrap className="h-5 w-5 text-[#7952b3]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">Bootstrap</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">Firebase</span>
-                </div>
-
-                {/* Postman / REST APIs */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiPostman className="h-6 w-6 text-[#ff6c37]" />
-                  </div>
-                  <span className="text-[11px] text-slate-200">REST APIs &amp; Postman</span>
                 </div>
               </div>
-            </div>
 
-            {/* Databases */}
-            <div className="space-y-2">
-              <p className="text-[11px] font-medium text-slate-300">Databases</p>
-              <div className="flex flex-wrap gap-4">
-                {/* MySQL */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiMysql className="h-6 w-6 text-[#4479a1]" />
+              {/* Tools & Platforms */}
+              <div className="rounded-xl p-3">
+                <p className="mb-2 text-[11px] font-medium text-slate-200">Tools &amp; Platforms</p>
+                <div className="flex flex-wrap gap-3">
+                  {/* Git */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiGit className="h-5 w-5 text-[#f05032]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">Git</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">MySQL</span>
-                </div>
 
-                {/* SQLite */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900">
-                    <SiSqlite className="h-6 w-6 text-[#003b57]" />
+                  {/* GitHub */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiGithub className="h-5 w-5 text-slate-100" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">GitHub</span>
                   </div>
-                  <span className="text-[11px] text-slate-200">SQLite</span>
+
+                  {/* AWS */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiAmazon className="h-5 w-5 text-[#ff9900]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">AWS</span>
+                  </div>
+
+                  {/* Render */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiRender className="h-5 w-5 text-[#46e3b7]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">Render</span>
+                  </div>
+
+                  {/* Firebase */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiFirebase className="h-5 w-5 text-[#ffca28]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">Firebase</span>
+                  </div>
+
+                  {/* Postman / REST APIs */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiPostman className="h-5 w-5 text-[#ff6c37]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">REST APIs &amp; Postman</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Concepts */}
-            <div className="space-y-2">
-              <p className="text-[11px] font-medium text-slate-300">Concepts</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="rounded-full bg-slate-900/70 px-3 py-1 text-[11px] text-slate-200">
-                  MVC Architecture
-                </span>
-                <span className="rounded-full bg-slate-900/70 px-3 py-1 text-[11px] text-slate-200">
-                  SOLID Principles
-                </span>
-                <span className="rounded-full bg-slate-900/70 px-3 py-1 text-[11px] text-slate-200">
-                  Agile Methodologies
-                </span>
+              {/* Databases & Concepts */}
+              <div className="rounded-xl p-3">
+                <p className="mb-2 text-[11px] font-medium text-slate-200">Databases &amp; Concepts</p>
+
+                <div className="mb-2 flex flex-wrap gap-3">
+                  {/* MySQL */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiMysql className="h-5 w-5 text-[#4479a1]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">MySQL</span>
+                  </div>
+
+                  {/* SQLite */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
+                      <SiSqlite className="h-5 w-5 text-[#003b57]" />
+                    </div>
+                    <span className="text-[11px] text-slate-200">SQLite</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-full bg-slate-900/70 px-3 py-1 text-[11px] text-slate-200">
+                    MVC Architecture
+                  </span>
+                  <span className="rounded-full bg-slate-900/70 px-3 py-1 text-[11px] text-slate-200">
+                    SOLID Principles
+                  </span>
+                  <span className="rounded-full bg-slate-900/70 px-3 py-1 text-[11px] text-slate-200">
+                    Agile Methodologies
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="relative mt-6 flex flex-wrap gap-3">
+        <div className="relative mt-6 flex flex-wrap items-center justify-center gap-3">
           <Button
             onClick={() => {
               const el = document.getElementById('projects')

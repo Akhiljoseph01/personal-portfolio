@@ -20,7 +20,7 @@ export function Header() {
           <span className="inline-flex h-2 w-2 rounded-full bg-green-400" />
           <span>Available for work</span>
         </div>
-        <nav className="hidden gap-6 text-xs font-medium text-muted sm:flex">
+        <nav className="hidden items-center gap-6 text-xs font-medium text-muted sm:flex">
           {SECTIONS.map((section) => (
             <button
               key={section.id}
@@ -31,6 +31,19 @@ export function Header() {
               {section.label}
             </button>
           ))}
+
+          <button
+            type="button"
+            onClick={() => {
+              window.open('/cv.pdf', '_blank')
+            }}
+            className="inline-flex items-center gap-1 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] font-medium text-slate-100 shadow-sm transition-colors hover:bg-white/10 hover:text-slate-50"
+          >
+            <span className="text-[10px] font-mono uppercase tracking-[0.16em] text-slate-300">
+              Resume
+            </span>
+            <span>Download CV</span>
+          </button>
         </nav>
       </div>
     </header>

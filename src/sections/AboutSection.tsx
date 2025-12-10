@@ -83,7 +83,7 @@ export function AboutSection() {
           <div className="flex items-center gap-2">
             <span className="w-7 text-[10px] text-slate-400">Mon</span>
             <div className="flex flex-wrap gap-[3px]">
-              {Array.from({ length: 32 }).map((_, idx) => (
+              {Array.from({ length: 48 }).map((_, idx) => (
                 <span
                   // static demo; can be wired to real data later
                   // eslint-disable-next-line react/no-array-index-key
@@ -100,7 +100,7 @@ export function AboutSection() {
           <div className="flex items-center gap-2">
             <span className="w-7 text-[10px] text-slate-400">Tue</span>
             <div className="flex flex-wrap gap-[3px]">
-              {Array.from({ length: 32 }).map((_, idx) => (
+              {Array.from({ length: 48 }).map((_, idx) => (
                 <span
                   // eslint-disable-next-line react/no-array-index-key
                   key={idx}
@@ -116,7 +116,7 @@ export function AboutSection() {
           <div className="flex items-center gap-2">
             <span className="w-7 text-[10px] text-slate-400">Wed</span>
             <div className="flex flex-wrap gap-[3px]">
-              {Array.from({ length: 32 }).map((_, idx) => (
+              {Array.from({ length: 48 }).map((_, idx) => (
                 <span
                   // eslint-disable-next-line react/no-array-index-key
                   key={idx}
@@ -132,7 +132,7 @@ export function AboutSection() {
           <div className="flex items-center gap-2">
             <span className="w-7 text-[10px] text-slate-400">Thu</span>
             <div className="flex flex-wrap gap-[3px]">
-              {Array.from({ length: 32 }).map((_, idx) => (
+              {Array.from({ length: 48 }).map((_, idx) => (
                 <span
                   // eslint-disable-next-line react/no-array-index-key
                   key={idx}
@@ -148,7 +148,7 @@ export function AboutSection() {
           <div className="flex items-center gap-2">
             <span className="w-7 text-[10px] text-slate-400">Fri</span>
             <div className="flex flex-wrap gap-[3px]">
-              {Array.from({ length: 32 }).map((_, idx) => (
+              {Array.from({ length: 48 }).map((_, idx) => (
                 <span
                   // eslint-disable-next-line react/no-array-index-key
                   key={idx}
