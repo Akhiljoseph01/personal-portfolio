@@ -74,7 +74,7 @@ export function ContactSection() {
             </svg>
           </div>
           <h3 className="text-sm font-semibold text-slate-50">GitHub</h3>
-          <p className="mt-1 text-xs font-mono text-slate-300">github.com/your-username</p>
+          <p className="mt-1 text-xs font-mono text-slate-300">github.com/Akhiljoseph01</p>
           <p className="mt-2 text-xs text-muted">Explore my code and projects</p>
         </a>
       </div>
