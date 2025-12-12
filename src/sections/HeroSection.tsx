@@ -206,7 +206,7 @@ export function HeroSection() {
               <div className="rounded-xl p-3">
                 <p className="mb-2 text-[11px] font-medium text-slate-200">Databases &amp; Concepts</p>
 
-                <div className="mb-2 flex flex-wrap gap-3">
+                <div className="mb-2 flex flex-wrap justify-center gap-3 sm:justify-start">
                   {/* MySQL */}
                   <div className="flex items-center gap-2">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900">
@@ -224,7 +224,7 @@ export function HeroSection() {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap justify-center gap-2 sm:justify-start">
                   <span className="rounded-full bg-slate-900/70 px-3 py-1 text-[11px] text-slate-200">
                     MVC Architecture
                   </span>
