@@ -23,7 +23,7 @@ export function PopupBanner({ open, onClose }: PopupBannerProps) {
     <div className="pointer-events-none fixed inset-x-0 bottom-4 z-30 flex justify-center px-3 sm:bottom-6 sm:px-4">
       <div className="pointer-events-auto flex w-full max-w-[620px] flex-col gap-3 rounded-2xl border border-white/10 bg-slate-950 px-4 py-2 text-[11px] shadow-xl sm:flex-row sm:items-center sm:justify-between sm:px-5 sm:py-2.5 popup-banner-enter">
         <div className="flex items-center gap-3 sm:gap-4">
-          <div className="hidden h-10 w-10 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white sm:flex">
+          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white">
             <SiLinkedin className="h-6 w-6 text-[#0A66C2]" />
           </div>
           <div className="space-y-0.5">

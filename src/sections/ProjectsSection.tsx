@@ -44,7 +44,9 @@ export function ProjectsSection() {
             <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-xs">
               <div className="flex flex-wrap gap-1.5">
                 {project.tech.map((tech) => (
-                  <Tag key={tech}>{tech}</Tag>
+                  <Tag key={tech} disableRedirect>
+                    {tech}
+                  </Tag>
                 ))}
               </div>
               <div className="flex items-center gap-2">

@@ -45,7 +45,9 @@ export function ExperienceSection() {
               <p className="text-xs leading-relaxed text-muted">{item.summary}</p>
               <div className="flex flex-wrap gap-1.5">
                 {item.stack.map((tech) => (
-                  <Tag key={tech}>{tech}</Tag>
+                  <Tag key={tech} disableRedirect>
+                    {tech}
+                  </Tag>
                 ))}
               </div>
             </div>
